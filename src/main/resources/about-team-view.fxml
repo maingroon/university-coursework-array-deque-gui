@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="330.0" maxWidth="550.0" minHeight="330.0" minWidth="550.0" prefHeight="330.0" prefWidth="550.0"
+            style="-fx-background-color: #606060;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sumdu.controller.AboutTeamController">
+    <Label layoutX="30.0" layoutY="30.0" text="Performers" textFill="#eeeeee">
+        <font>
+            <Font name="Arial Bold" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="performersLabel" layoutX="30.0" layoutY="65.0" textFill="#eeeeee">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+    <Label layoutX="30.0" layoutY="150.0" text="About Program" textFill="#eeeeee">
+        <font>
+            <Font name="Arial Bold" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="aboutProgramLabel" layoutX="30.0" layoutY="185.0" textFill="#eeeeee">
+        <font>
+            <Font name="Arial Bold" size="15.0"/>
+        </font>
+    </Label>
+</AnchorPane>
