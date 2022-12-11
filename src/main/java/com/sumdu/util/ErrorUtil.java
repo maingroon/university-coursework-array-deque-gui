@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -26,6 +27,7 @@ public class ErrorUtil {
             errorStage.setTitle("ArrayDeque error");
             errorStage.setResizable(false);
             errorStage.setScene(errorScene);
+            errorStage.initModality(Modality.APPLICATION_MODAL);
         }
 
         Scene errorScene = errorStage.getScene();

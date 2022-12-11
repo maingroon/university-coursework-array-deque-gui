@@ -6,21 +6,18 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class ArraySizeController {
+public class ShowElementController {
 
     @FXML
-    private Label arraySizeLabel;
-
-    public void setArraySize(int arraySize) {
-        if (arraySize < 0) {
-            throw new IllegalStateException("Array size cannot be less than 0");
-        }
-        arraySizeLabel.setText("ArrayDeque size: " + arraySize);
-    }
+    Label rectangleLabel;
 
     @FXML
     private void onOkButtonClick(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.close();
+    }
+
+    public void setRectangleValue(int value) {
+        rectangleLabel.setText(String.valueOf(value));
     }
 }

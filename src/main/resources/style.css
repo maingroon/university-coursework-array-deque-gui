@@ -1,0 +1,29 @@
+-fx-root {
+    --input-color: #A6C6DA;
+    --background-color: #93BAD2;
+    --button-color: #5084AB;
+    --text-color: #737373;
+}
+
+.background {
+    -fx-background-color: var(--background-color);
+    -fx-font: bold Arial;
+    -fx-text-fill: var(--text-color);
+}
+
+.button {
+    -fx-background-color: var(--button-color);
+    -fx-font: bold Arial;
+    -fx-text-fill: var(--text-color);
+}
+
+.input {
+    -fx-background-color: var(--input-color);
+    -fx-prompt-text-fill: var(--text-color);
+    -fx-text-fill: var(--text-color);
+}
+
+.text {
+    -fx-font: bold Arial;
+    -fx-text-fill: var(--text-color);
+}

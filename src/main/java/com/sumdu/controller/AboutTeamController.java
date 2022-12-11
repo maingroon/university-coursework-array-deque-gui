@@ -1,13 +1,11 @@
 package com.sumdu.controller;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.Objects;
 
-public class AboutTeamController implements Initializable {
+public class AboutTeamController {
 
     @FXML
     private Label performersLabel;
@@ -15,22 +13,13 @@ public class AboutTeamController implements Initializable {
     @FXML
     private Label aboutProgramLabel;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        performersLabel.setText(
-                """
-                1. Badyva Sergey Oleksandrovych
-                2. Berezhny Vladyslav Oleksandrovych
-                3. Bondarenko Oleksandr Fedorovych
-                4. Borovyk Oleksandr Olehovych"""
-        );
+    public void setPerformersText(String performersText) {
+        Objects.requireNonNull(performersText);
+        performersLabel.setText(performersText);
+    }
 
-        aboutProgramLabel.setText(
-                """
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat."""
-        );
+    public void setAboutProgramText(String aboutProgramText) {
+        Objects.requireNonNull(aboutProgramText);
+        aboutProgramLabel.setText(aboutProgramText);
     }
 }

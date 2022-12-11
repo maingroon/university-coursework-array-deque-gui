@@ -3,7 +3,6 @@ package com.sumdu;
 import com.sumdu.util.ErrorUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -17,8 +16,8 @@ public class ArrayDequeGuiApplication extends Application {
     public void start(Stage mainStage) throws IOException {
         try {
             URL mainViewLocation = Objects.requireNonNull(getClass().getResource("/main-view.fxml"));
-            Parent mainParent = FXMLLoader.load(mainViewLocation);
-            Scene mainScene = new Scene(mainParent);
+            FXMLLoader fxmlLoader = new FXMLLoader(mainViewLocation);
+            Scene mainScene = new Scene(fxmlLoader.load());
 
             mainStage.setTitle("ARRAY DEQUE");
             mainStage.setResizable(false);
