@@ -1,8 +1,10 @@
-module com.sumdu.arraydequegui {
+module com.sumdu {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.sumdu.arraydequegui to javafx.fxml;
-    exports com.sumdu.arraydequegui;
+    opens com.sumdu to javafx.fxml;
+    exports com.sumdu;
+    exports com.sumdu.controller;
+    opens com.sumdu.controller to javafx.fxml;
 }

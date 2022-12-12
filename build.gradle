@@ -24,8 +24,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'com.sumdu.arraydequegui'
-    mainClass = 'com.sumdu.arraydequegui.HelloApplication'
+    mainModule = 'com.sumdu'
+    mainClass = 'com.sumdu.ArrayDequeGuiApplication'
 }
 
 javafx {
